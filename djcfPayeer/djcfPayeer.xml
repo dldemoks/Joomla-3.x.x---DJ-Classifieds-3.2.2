@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="djclassifiedspayment"  method="upgrade">
+	<name>DJ Classifieds Payeer payment</name>
+	<author>payeer.com</author>
+	<creationDate>May 2017</creationDate>
+	<copyright>Copyright (C) 2017 payeer.com, All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>info@payeer.com</authorEmail>
+	<authorUrl>https://payeer.com</authorUrl>
+	<version>1.0.0</version>
+	<description>DJ Classifieds Payeer payment</description>
+	<files>
+		<filename plugin="djcfPayeer">djcfPayeer.php</filename>
+		<folder>djcfPayeer</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_djclassifiedspayment_djcfPayeer.ini</language>
+		<language tag="ru-RU">ru-RU.plg_djclassifiedspayment_djcfPayeer.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="merchant_url" type="text" size="50" label="DJCFPAYMENT_PAYEER_MERCHANT_URL" description="DJCFPAYMENT_PAYEER_MERCHANT_URL_DESC" default="https://payeer.com/merchant/" />
+				<field name="merchant_id" type="text" size="50" label="DJCFPAYMENT_PAYEER_MERCHANT_ID" default="" description="DJCFPAYMENT_PAYEER_MERCHANT_ID_DESC" />
+				<field name="secret_key" type="text" size="50" label="DJCFPAYMENT_PAYEER_SECRET_KEY" default="" description="DJCFPAYMENT_PAYEER_SECRET_KEY_DESC" />
+				<field name="payment_currency" type="text" label="DJCFPAYMENT_STANDARD_CURRENCY" default="RUB" description="DJCFPAYMENT_STANDARD_CURRENCY_DESC" />
+				<field name="ip_filter" type="text" size="50" default="" label="DJCFPAYMENT_PAYEER_IP_FILTER" description="DJCFPAYMENT_PAYEER_IP_FILTER_DESC" />
+				<field name="admin_email" type="text" size="50" default="" label="DJCFPAYMENT_PAYEER_ADMIN_EMAIL" description="DJCFPAYMENT_PAYEER_ADMIN_EMAIL_DESC" />
+				<field name="log_file" type="text" size="50" default="" label="DJCFPAYMENT_PAYEER_LOGFILE" description="DJCFPAYMENT_PAYEER_LOGFILE_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
