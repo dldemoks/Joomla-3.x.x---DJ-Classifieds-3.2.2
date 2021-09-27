@@ -220,7 +220,7 @@ class plgdjclassifiedspaymentdjcfPayeer extends JPlugin
 		
 				// загрузка заказа
 				
-				$id	= JRequest::getVar('m_orderid');
+				$id	= intval(JRequest::getInt('m_orderid'));
 				$query = "SELECT p.*  FROM #__djcf_payments p WHERE p.id='" . $id . "'";
 		    	$db->setQuery($query);
 		    	$payment = $db->loadObject();
