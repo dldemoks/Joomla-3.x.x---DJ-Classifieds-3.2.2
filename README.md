@@ -1,8 +1,8 @@
 Joomla
 ======
-Модуль оплаты Payeer
+Payment module Payeer
 
-Для установки модуля скачайте и распакуйте архив.
-Далее следуйте прилагаемой инструкции
+To install the module, download and unzip the archive.
+Then follow the attached instructions.
 
-Разрабатывался на версии CMS Joomla 3.7.1 с установленным DJ-Classifieds 3.2.2
+Support for CMS Joomla 3.7.1 with DJ-Classifieds 3.2.2 installed
